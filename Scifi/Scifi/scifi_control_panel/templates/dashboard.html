@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Dashboard</h2>
+    <div class="status">
+        <h3>Current Status</h3>
+        <p><strong>Location:</strong> {{ data.navigation.current_location }}</p>
+        <p><strong>Oxygen Level:</strong> {{ data.life_support.oxygen_level }}%</p>
+        <p><strong>Last Message:</strong> {{ data.communication.last_message }}</p>
+    </div>
+{% endblock %}

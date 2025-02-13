@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Navigation System</h2>
+    <div class="navigation">
+        <p><strong>Current Location:</strong> {{ data.current_location }}</p>
+        <p><strong>Destination:</strong> {{ data.destination }}</p>
+        <p><strong>Fuel Level:</strong> <span id="fuel-level">{{ data.fuel_level }}%</span></p>
+        <p><strong>Warp Drive:</strong> {{ data.warp_drive_status }}</p>
+    </div>
+{% endblock %}
