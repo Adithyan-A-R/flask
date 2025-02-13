@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Life Support System</h2>
+    <div class="life-support">
+        <p><strong>Oxygen Level:</strong> <span id="oxygen-level">{{ data.oxygen_level }}%</span></p>
+        <p><strong>Temperature:</strong> <span id="temperature">{{ data.temperature }}°C</span></p>
+        <p><strong>Gravity:</strong> {{ data.gravity }}</p>
+    </div>
+{% endblock %}

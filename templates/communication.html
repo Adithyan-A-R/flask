@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Communication System</h2>
+    <div class="communication">
+        <p><strong>Last Message:</strong> {{ data.last_message }}</p>
+        <h3>Incoming Messages</h3>
+        <ul>
+            {% for message in data.incoming_messages %}
+                <li class="alert">{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
