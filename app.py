@@ -39,6 +39,3 @@ def life_support():
 @app.route('/communication')
 def communication():
     return render_template('communication.html', data=spaceship_data["communication"])
-
-if __name__ == '__main__':
-    app.run(debug=True)
